@@ -1,0 +1,379 @@
+/* ===== BASIC SETTINGS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f7ff;
+    color: #202044;
+    line-height: 1.6;
+}
+
+span {
+    color: #ec4899;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4338ca;
+}
+
+.logo span {
+    color: #ec4899;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #34345a;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ec4899;
+}
+
+.nav-button {
+    background: #4338ca;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+    min-height: 550px;
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: linear-gradient(120deg, #eef2ff, #fce7f3);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: #25204f;
+}
+
+.hero h1 span {
+    color: #ec4899;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #646480;
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+.main-button {
+    display: inline-block;
+    border: none;
+    background: linear-gradient(90deg, #4338ca, #ec4899);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.small-text {
+    margin-top: 22px;
+    color: #77718f;
+    font-size: 14px;
+}
+
+/* ===== HERO CARD ===== */
+
+.hero-card {
+    width: 330px;
+    min-width: 280px;
+    padding: 35px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(67, 56, 202, 0.12);
+}
+
+.brain-icon {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    color: #4338ca;
+    margin-bottom: 8px;
+}
+
+.hero-card > p {
+    color: #77718f;
+}
+
+.quiz-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee8ff;
+}
+
+.quiz-stats h3 {
+    color: #ec4899;
+    font-size: 25px;
+}
+
+.quiz-stats p {
+    font-size: 13px;
+    color: #77718f;
+}
+
+/* ===== FEATURES SECTION ===== */
+
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-heading h2,
+.quiz-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-heading > p:last-child {
+    color: #77718f;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 330px;
+    padding: 30px 22px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(67, 56, 202, 0.07);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #4338ca;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #77718f;
+    font-size: 15px;
+}
+
+/* ===== QUIZ SECTION ===== */
+
+.quiz-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(120deg, #eef2ff, #fce7f3);
+}
+
+.quiz-section > p:not(.tagline) {
+    color: #77718f;
+    margin-bottom: 25px;
+}
+
+.quiz-box {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(67, 56, 202, 0.1);
+}
+
+.quiz-box h3 {
+    margin: 15px 0 20px;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+    color: #25204f;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-button:hover:not(:disabled) {
+    border-color: #8b5cf6;
+    background: #f5f3ff;
+}
+
+.option-button:disabled {
+    cursor: default;
+}
+
+.option-button.correct {
+    border-color: #16a34a;
+    background: #dcfce7;
+}
+
+.option-button.incorrect {
+    border-color: #dc2626;
+    background: #fee2e2;
+}
+
+#nextBtn {
+    margin-top: 20px;
+}
+
+#resultText {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4338ca;
+}
+
+/* ===== ABOUT SECTION ===== */
+
+.about {
+    padding: 70px 8%;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: #77718f;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: #25204f;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .section-heading h2,
+    .quiz-section h2 {
+        font-size: 30px;
+    }
+}
